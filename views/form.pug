@@ -1,0 +1,7 @@
+form(action="/toggle" method="POST")
+  toggle-button-fallback
+    label yes
+      input(type="radio" name="toggle" value="true" checked=!!toggle)
+    label no
+      input(type="radio" name="toggle" value="false" checked=!toggle)
+    button(type="submit") submit
